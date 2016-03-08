@@ -35,10 +35,15 @@ Ukoliko je u toku vršenja proračuna sklopa došlo do greške ili aplikacija je
 ##Funkcionalnosti
 
  •	 mogućnost registracije korisnika 
+ 
  •	 mogućnost za unos novih sklopova 
- •  mogućnost za nadogradnju  postojećih sklopova 
+ 
+ •  mogućnost za nadogradnju  postojećih sklopova
+ 
  •	 mogućnost odabira sheme sklopa iz biblioteke sklopova 
+ 
  •	 mogućnost  odabira parametara komponenti sklopa 
+ 
  •	 mogućnost feedback-a o najčešće korištenim sklopovima 
 
 Akteri
