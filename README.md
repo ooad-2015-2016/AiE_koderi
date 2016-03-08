@@ -34,15 +34,17 @@ Ukoliko je u toku vršenja proračuna sklopa došlo do greške ili aplikacija je
 
 ##Funkcionalnosti
 
-•	mogućnost registracije korisnika 
-•	mogućnost za unos novih sklopova 
-•	mogućnost za nadogradnju  postojećih sklopova 
-•	mogućnost odabira sheme sklopa iz biblioteke sklopova 
-•	mogućnost  odabira parametara komponenti sklopa 
-•	mogućnost feedback-a o najčešće korištenim sklopovima 
+ •	 mogućnost registracije korisnika 
+ •	 mogućnost za unos novih sklopova 
+ •  mogućnost za nadogradnju  postojećih sklopova 
+ •	 mogućnost odabira sheme sklopa iz biblioteke sklopova 
+ •	 mogućnost  odabira parametara komponenti sklopa 
+ •	 mogućnost feedback-a o najčešće korištenim sklopovima 
 
 Akteri
-1.	Korisnik –ima mogućnost izbora željenog sklopa iz ponuđene liste sklopova,te unos parametara kola. Korisnik ,ovisno o svojim preferencama može podesiti boju  grana i čvorova u električnom kolu koje razmatra u datom trenutku .
-2.	App developer – ima potpuni pristup software-u;vrši praćenje,regulaciju i poboljšanje performansi aplikacije. 
+
+ 1.	Korisnik –ima mogućnost izbora željenog sklopa iz ponuđene liste sklopova,te unos parametara kola. Korisnik ,ovisno o svojim preferencama može podesiti boju  grana i čvorova u električnom kolu koje razmatra u datom trenutku .
+ 
+ 2.	App developer – ima potpuni pristup software-u;vrši praćenje,regulaciju i poboljšanje performansi aplikacije. 
 
 
