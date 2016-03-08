@@ -8,7 +8,7 @@
 
 ##Opis teme
 
-Aplikacija će služiti kao svojevrstna edukacijska alatka za proračun sklopova vezanih za unipolarne i bipolarne tranzistore,kao i operaciona pojačala,te interaktivno učenje o osobinama elektroničkih komponenti,njihovom ponašanju u složenijim sistemima,kao i osnovama analogne elektronike,te kao takva je namijenjena studentima na tehničkim fakultetima,učenicima srednjih škola koji mogu na brz i jednostavan način provjeriti zadatke,te drugim osobama koje žele nadograditi svoje znanje iz elektronike,ili  upoznati se sa funkcijom pojedinih sklopova.
+Aplikacija će služiti kao svojevrsna edukacijska alatka za proračun sklopova vezanih za unipolarne i bipolarne tranzistore,kao i operaciona pojačala,te interaktivno učenje o osobinama elektroničkih komponenti,njihovom ponašanju u složenijim sistemima,kao i osnovama analogne elektronike,te kao takva je namijenjena studentima na tehničkim fakultetima,učenicima srednjih škola koji mogu na brz i jednostavan način provjeriti zadatke,te drugim osobama koje žele nadograditi svoje znanje iz elektronike,ili  upoznati se sa funkcijom pojedinih sklopova.
 
 ##Procesi
 
