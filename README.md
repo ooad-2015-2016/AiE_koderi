@@ -8,48 +8,54 @@
 
 ##Opis teme
 
-Aplikacija će služiti kao svojevrsna edukacijska alatka za proračun sklopova vezanih za unipolarne i bipolarne tranzistore,kao i operaciona pojačala,te interaktivno učenje o osobinama elektroničkih komponenti,njihovom ponašanju u složenijim sistemima,kao i osnovama analogne elektronike,te kao takva je namijenjena studentima na tehničkim fakultetima,učenicima srednjih škola koji mogu na brz i jednostavan način provjeriti zadatke,te drugim osobama koje žele nadograditi svoje znanje iz elektronike,ili  upoznati se sa funkcijom pojedinih sklopova.
+Aplikacija je osmišljena da služi za registriranje i mjerenje elektrodermalne reakcije,čija analiza predstavlja vrlo značajnu komponentu kod ispitivanja pomoću detektora laži,i koja određuje koliko je  osoba koja je podvrgnuta ispitivanjima nervozna.Elektrodermalna reakcija (EDR) predstavlja promjenu otpora kože i jedna je od najčešćih mjera u psihofiziološkim ispitivanjima.Površinski sloj kože se sastoji od izumrlih ćelija koje tvore zaštitni sloj,koji ima veliki električni otpor (Suha koža ima otpor od milion ohma).Kada osobu podvrgnemo stresu,počinje se znojiti ,te na određenim dijelovima pada otpor kože. 
+
+Aplikacija je implementirana korištenjem Arduino platforme ,te odgovarajućih električnih komponenti,te pruža širok spekar područja upotrebe: mogućnost mjerenja električnog otpora kože ispitanika, mogućnost analize električnog otpora kože ispitanika pri stresnim situacijama ,provjera iskrenosti ispitanika pri različitim ispitivanjima,te u svrhe zabave.
+
 
 ##Procesi
 
-1.Proces registracije korisnika
+1.Proces kalibracije 
 
-Proces registracije korisnika se realizira klikom na dugme Registracija.Korisnik samostalno unosi svoje lične podatke(ime i prezime,nickname,datum rođenja i mjesto prebivališta(opcionalno) i password).
-   
-2.Proces login-a
+Prije službenog korištenja ,potrebno je izvršiti proces kalibracije detektora laži s obzirom da električni otpor osoba varira.Potrebno je da se korisnik nalazi u sjedećem stavu,te u opuštenom ambijentu u cilju povećanja tačnosti mjerenja.Korisniku postavljamo elektrode detektora na dlanove njegove lijeve i desne ruke.Ispitivač postavlja referentni otpor pomoću potenciometra.
 
-U okviru log screen-a korisnik može izvršiti login ,tako što unosi svoj nick i password u odgovarajuća polja.Da bi pristupio procesu logovanja korisnik prvobitno mora izvršiti proces registracije.
+1.1. Proces pre-test pitanja
 
-3.Proces odabira sklopa 
+Proces test pitanja je podproces procesa kalibracije instrumenta i vrlo je značajan korak u cjelokuponom procesu ispitivanja.Nakon davanja kratke upute korisniku o funkcionalnosti detektora te njegovoj primjeni,ispitivač postavlja set kratkih pitanja na koje korisnik odgovara sa da/ne . Test pitanja,koja moraju biti jednostavna,i ne uzrokuju uplitanje emocija ,omogućuju korisniku da se opusti.
 
-Aplikacija je organizovana tako da korisniku nudi vizuelan prikaz određenog broja elektroničkih sklopova(zajedno sa njihovim nazivima) u okviru Home screen-a (koji se dijeli na dugme koje pristupa biblioteci sklopova i dugme koje pristupa najčešće korištenim sklopovima). Korisnik  klikom na biblioteku sklopova ima pregled sklopova(predstavljeni u vidu foldera),te odabire  željeni sklop.Nakon odabira sklopa,te prikazivanja istog u većoj rezoluciji,korisnik klikom odabire odgovarajuću komponentu i unosi  vrijednosti  komponenti sklopa(vrijednosti otpornosti,strujno pojačanje bipolarnog tranzistora i slično),te kao rezultat dobiva detaljan proračun sklopa (radna tačka sklopa,ulazne/izlazne impedanse,prenosne funkcije,strujno/naponsko pojačanje).
+2.Proces in-test pitanja
 
-4.Proces unosa i dodavanja sklopova
+Nakon procesa pre-test pitanja,korisnika stavljamo pod stres postavljanjem težih i intimnijih pitanja (od velike važnosti je postavljati pitanja korisniku na koja može odgovoriti sa da/ne odgovorima).Kako se stres bude povećavao,korisnik će se početi znojiti ,što će dovesti do promjene električnog otpora kože,odnosno njenog smanjenja,a samim tim i smanjenja vrijednosti napona.
 
-   Administratoru je omogućen  unos novih ,te nadogradnja već postojećih sklopova iz menija.
-   
-5.Proces popravke kvara programa /update aplikacije
+2.1.Proces analize odgovora korisnika
 
-Ukoliko je u toku vršenja proračuna sklopa došlo do greške ili aplikacija je naglo prestala funkcionisati,administrator vrši popravke i ažuriranje aplikacije.
+Proces analize odgovora korisnika je podproces procesa in-test pitanja.Nakon što korisnik odgovori na postavljeno pitanje sa da/ne odgovorom,jedna od LED dioda sklopa će se upaliti ovisno da li je dati odgovor istina ili laž.Sklop je preko Arduina povezan sa software-om na kompjuteru preko USB port-a.Sučelje aplikacije je organizovano tako da ,ovisno o odgovoru ispitanika, se ispisuje poruka ISTINA/LAŽ ,te određeni zvučni efekti .
+
+3.Proces dodavanja  i izmjene pitanja
+
+Ispitivaču je omogućen  unos novih pitanja ,te razvrstavanje istih u kategorije po temama.
+
+4.Proces popravke kvara programa /update aplikacije
+
+Ukoliko je došlo do greške ili aplikacija je naglo prestala funkcionisati,administrator vrši popravke i ažuriranje aplikacije.
+
 
 ##Funkcionalnosti
 
- •	 mogućnost registracije korisnika 
+ •	 mogućnost mjerenja električnog otpora kože korisnika
  
- •	 mogućnost za unos novih sklopova 
+ •  mogućnost analize električnog otpora kože korisnika pri stresnim situacijama
  
- •  mogućnost za nadogradnju  postojećih sklopova
- 
- •	 mogućnost odabira sheme sklopa iz biblioteke sklopova 
- 
- •	 mogućnost  odabira parametara komponenti sklopa 
- 
- •	 mogućnost feedback-a o najčešće korištenim sklopovima 
+ •  mogućnost za unos novih pitanja
+  
+ •  mogućnost razvrstavanja pitanja po srodnim temama
+   
+ •  mogućnost feedback-a o najčešće postavljenim pitanjima
 
-Akteri
+##Akteri
 
- 1.	Korisnik –ima mogućnost izbora željenog sklopa iz ponuđene liste sklopova,te unos parametara kola. Korisnik ,ovisno o svojim preferencama može podesiti boju  grana i čvorova u električnom kolu koje razmatra u datom trenutku .
+ 1.	Ispitivač –ima potpuni pristup software-u,te vrši kalibraciju detektora laži ,postavljanje i dodavanje pitanja,i analizu odgovora ispitanika.
  
- 2.	App developer – ima potpuni pristup software-u;vrši praćenje,regulaciju i poboljšanje performansi aplikacije. 
+ 2.	Korisnik- osoba koju stavljamo pod stres,postavljanjem serije pitanja i analiziramo promjenu njenog električnog otpora kože.
 
 
