@@ -1,0 +1,34 @@
+1. Princip pojedinacne odgovornosti
+
+ KLASA BI TREBALA IMATI SAMO JEDAN RAZLOG ZA PROMJENU.
+
+Klase treba da znaju samo o jednoj stvari,odnosno one trebaju imati pojedinaènu odgovornost.
+Sve klase sadrže metode koje su eksplicitno vezane za atribute(get-eri i set-eri), pa je ovaj princip ispostovan.
+
+2. Otvoreno zatvoren princip
+
+ ENTITETI SOFTVERA (KLASE, MODULI, FUNKCIJE) TREBALI BI BITI OTVORENI ZA NADOGRADNJU, ALI ZATVORENI ZA MODIFIKACIJE.
+
+Ovaj princip je zadovoljen jer nadogradnjom postojecih klasa ne uticemo na postojece metode i atribute tih klasa.
+
+3. Liskov princip zamjene
+
+PODTIPOVI MORAJU BITI ZAMJENJIVI NJIHOVIM OSNOVNIM TIPOVIMA.
+
+Liskov princip zamjene nije ispostovan, jer nije logicno klasu Detektor lazi zamijeniti klasom Pitanje, kao ni klasu Referenciranje klasom Testiranje.
+
+4. Princip inverzije ovisnosti
+
+A. MODULI VISOKOG NIVOA NE BI TREBALI OVISITI OD MODULA NISKOG NIVOA. OBA BI TREBALO DA OVISE OD APSTRAKCIJA.
+B. MODULI NE BI TREBALI OVISITI OD DETALJA. DETALJI BI TREBALI BITI OVISNI OD APSTRAKCIJA.
+
+Princip nije ispostovan usljed nedostatka apstrakcije.
+
+
+5. Princip izoliranja interfejsa
+
+KLIJENTI NE TREBA DA OVISE O METODAMA KOJE NECE UPOTREBLJAVATI.
+
+U našem sluèaju nema tzv. "debelih klasa", odnosno klasa koje imaju veliki broj metoda, te je princip izoliranja interfejsa ispoštovan.
+Klase Ispitivaè, Korisnik, Detektor laži, te klasa Referenciranje imaju one metode koje su eksplicitno vezane za atribute istih klasa, i koje æe se 
+èesto/uvijek upotrebljavati.
