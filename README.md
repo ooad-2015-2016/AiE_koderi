@@ -59,7 +59,7 @@ Ukoliko je došlo do greške ili aplikacija je naglo prestala funkcionisati,admi
  2.	Korisnik- osoba koju stavljamo pod stres,postavljanjem serije pitanja i analiziramo promjenu njenog električnog otpora kože.
 
 
-##Upustvo za korištenje aplikacije Detekor laži
+##Upustvo za korištenje aplikacije Detektor laži
 
 LogIn i Registracija
 
