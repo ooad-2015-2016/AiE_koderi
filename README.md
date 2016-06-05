@@ -81,6 +81,7 @@ Baždarenje
 Baždaranje se vrši na početku svakog novog ispitivanja.Klijent se spoji na detektor laži i mjeri se elektrodermalni otpor njegove kože. Kad se odredi elektrodermalni otpor kože može se pristupiti ispitivanju klijenta.
 
 Pregled pitanja
+
 U opciji Pregled pitanja,korisnik ima mogućnost odabira pitanja,te nastavka ispitivanja ili direktno preusmjeravanje na opciju Modifikacija pitanja iz glavnog menija.
 
 Modifikacija pitanja
