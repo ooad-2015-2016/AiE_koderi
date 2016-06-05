@@ -72,6 +72,7 @@ Nakon izvršene registracije,odnosno login-a korisniku aplikacije je ponuđen me
 Unos podataka klijenta
 
 Ukoliko se radi o novom klijentu,korisnik aplikacije vrši unos njegovih ličnih podataka ,odnosno ime i prezime,datum rođenja,te spol u za to predviđena mjesta.
+
 Nakon odabira opcije Sačuvaj podatke,korisniku je omogućeno da se vrati na Menu i odabere opciju Pregled pitanja/ili Modifikacija pitanja ili da nastavi sa procesom baždarenja.
 
 Ukoliko se radi o postojećem klijentu,korisniku aplikacije je ponuđen ListBox sa izlistanim ličnim podacima klijenta,te odabirom istih ,korisnik kao u prethodnom slučaju može da nastavi sa procesom baždarenja ili da ide na Menu.
