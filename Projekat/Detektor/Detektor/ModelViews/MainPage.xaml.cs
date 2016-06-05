@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Detektor.ModelViews;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,7 +16,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace App1
+namespace Detektor
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -24,17 +25,22 @@ namespace App1
     {
         public MainPage()
         {
+
             this.InitializeComponent();
+            var inicijalizacija = new
+            DataSource.DataSourceMenuMD();
         }
+    
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private async void bLog_Click(object sender, RoutedEventArgs e)
         {
-
+            //this.Frame.Navigate(typeof(BlankPage1));
+           // var sifra=pass.Password;
+            
         }
-
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void RegBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Registracija));
         }
     }
 }

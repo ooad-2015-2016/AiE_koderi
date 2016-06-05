@@ -13,38 +13,18 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace App1
+namespace Detektor.ModelViews
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Home : Page
     {
-        public MainPage()
+        public Home()
         {
             this.InitializeComponent();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void textBlock1_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void toggleSwitch_Toggled(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
