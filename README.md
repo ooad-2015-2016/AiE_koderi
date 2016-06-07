@@ -1,4 +1,4 @@
-# AiE_koderi
+﻿# AiE_koderi
 
 ##Članovi tima:
 1. Aksamovic Jasmin
@@ -58,4 +58,34 @@ Ukoliko je došlo do greške ili aplikacija je naglo prestala funkcionisati,admi
  
  2.	Korisnik- osoba koju stavljamo pod stres,postavljanjem serije pitanja i analiziramo promjenu njenog električnog otpora kože.
 
+
+##Upustvo za korištenje aplikacije Detektor laži
+
+LogIn i Registracija
+
+Nakon pokretanja aplikacije ,potrebno je da se korisnik uloguje unoseći korisničko ime  i šifru u za to predviđena polja da bi nastavio sa daljnim korištenjem iste.
+
+U slučaju,da korisnik nema otvoren korisnički račun,potrebno je da izvrši registraciju pri čemu unosi svoje lične podatke(ime i prezime),te korisničko ime i šifru.
+
+Nakon izvršene registracije,odnosno login-a korisniku aplikacije je ponuđen menu sa 4 opcije:Unos klijenta,Pregled pitanja,Modifikacija pitanja i Help.
+
+Unos podataka klijenta
+
+Ukoliko se radi o novom klijentu,korisnik aplikacije vrši unos njegovih ličnih podataka ,odnosno ime i prezime,datum rođenja,te spol u za to predviđena mjesta.
+
+Nakon odabira opcije Sačuvaj podatke,korisniku je omogućeno da se vrati na Menu i odabere opciju Pregled pitanja/ili Modifikacija pitanja ili da nastavi sa procesom baždarenja.
+
+Ukoliko se radi o postojećem klijentu,korisniku aplikacije je ponuđen ListBox sa izlistanim ličnim podacima klijenta,te odabirom istih ,korisnik kao u prethodnom slučaju može da nastavi sa procesom baždarenja ili da ide na Menu.
+
+Baždarenje
+ 
+Baždaranje se vrši na početku svakog novog ispitivanja.Klijent se spoji na detektor laži i mjeri se elektrodermalni otpor njegove kože. Kad se odredi elektrodermalni otpor kože može se pristupiti ispitivanju klijenta.
+
+Pregled pitanja
+
+U opciji Pregled pitanja,korisnik ima mogućnost odabira pitanja,te nastavka ispitivanja ili direktno preusmjeravanje na opciju Modifikacija pitanja iz glavnog menija.
+
+Modifikacija pitanja
+
+Opcija Modifikacija pitanja nudi mogućnost dodavanja novih pitanja u bazu pitanja ili brisanja postojećih pitanja.Prilikom dodavanja novog pitanja potrebno je izvršiti klasifikaciju pitanja odabirom ponuđenih naziva oblasti u padajućem meniju.
 

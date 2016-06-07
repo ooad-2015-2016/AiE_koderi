@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Detektor.ModelViews.Registracija"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Detektor.ModelViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ContentDialogBorderThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="ImeBox" HorizontalAlignment="Center" Height="40" Margin="28,10,17,140" TextWrapping="Wrap" Text="Ime" VerticalAlignment="Center" Width="315" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="PrezimeBox" HorizontalAlignment="Center" Height="40" Margin="28,95,17,0" TextWrapping="Wrap" Text="Prezime" VerticalAlignment="Top" Width="315"/>
+        <TextBox x:Name="UsernameBox" HorizontalAlignment="Center" Height="40" Margin="28,0,17,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="315" Grid.Row="1"/>
+        <PasswordBox x:Name="passwordBox"  HorizontalAlignment="Center" Margin="28,90,17,320" VerticalAlignment="Center" Width="315" Height="40" Password="" PlaceholderText="Sifra" Grid.Row="1"/>
+        <Button x:Name="Regb" Content="Registracija!" HorizontalAlignment="Center" Height="53" Margin="70,295,65,102" Grid.Row="1" VerticalAlignment="Center" Width="225" RenderTransformOrigin="0.526,1.566"/>
+
+    </Grid>
+</Page>
