@@ -100,19 +100,38 @@
     </Compile>
     <Compile Include="DataSource\DataSourceMenuMD.cs" />
     <Compile Include="Models\DetektorLazi.cs" />
+    <Compile Include="Models\DetektorLaziDbContext.cs" />
     <Compile Include="Models\Ispitivac.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\Pitanja.cs" />
     <Compile Include="Models\Referenciranje.cs" />
     <Compile Include="Models\Testiranje.cs" />
+    <Compile Include="ModelViews\DodajPitanje.xaml.cs">
+      <DependentUpon>DodajPitanje.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModelViews\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelViews\Ispitivanje.xaml.cs">
+      <DependentUpon>Ispitivanje.xaml</DependentUpon>
     </Compile>
     <Compile Include="ModelViews\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ModelViews\ModelViews\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelViews\ModelViews\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelViews\ModelViews\Registracija.xaml.cs">
+      <DependentUpon>Registracija.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModelViews\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelViews\UnesiOdgovor.xaml.cs">
+      <DependentUpon>UnesiOdgovor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -123,6 +142,11 @@
     <None Include="Detektor_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ModelViews\Images\add-a-button-icon-56789.png" />
+    <Content Include="ModelViews\Images\add-user-2-xxl.png" />
+    <Content Include="ModelViews\Images\help.png" />
+    <Content Include="ModelViews\Images\icon-69605.png" />
+    <Content Include="ModelViews\Images\yTo7rX4TE.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -137,17 +161,45 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ModelViews\Choice.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ModelViews\DodajPitanje.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ModelViews\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ModelViews\Ispitivanje.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ModelViews\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ModelViews\ModelViews\Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ModelViews\ModelViews\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ModelViews\ModelViews\Registracija.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ModelViews\Registracija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModelViews\UnesiOdgovor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup />

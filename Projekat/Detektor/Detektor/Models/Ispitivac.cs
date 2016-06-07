@@ -8,7 +8,8 @@ namespace Detektor.Models
 {
     class Ispitivac
     {
-        public string ImePrezime{ get; set}
-        public string Password { get; set }
+        public int IspitivacId { get; set; }
+        public string ImePrezime { get; set; }
+        public string Password { get; set; }
     }
 }

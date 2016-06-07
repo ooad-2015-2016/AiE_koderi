@@ -9,7 +9,7 @@ namespace Detektor.Models
     enum Pol { Musko,Zensko};
     class Korisnik
     {
-        
+        public int KorisnikId { get; set; }
         public string Username { get; set; }
         public DateTime DatumRodjenja { get; set; }
         public Pol pol { get; set; }

@@ -9,8 +9,9 @@ namespace Detektor.Models
 {
     class Referenciranje
     {
-        List<Ispitivac> BazaIspitivaca { get; set};
-        List<Korisnik> BazaKorisnika { get; set}
-
+        public List<double> TestVrijednost;
+        public bool bazdarenje = false;
+        public Korisnik subjekat;
+        public Ispitivac Upravljac;
     }
 }

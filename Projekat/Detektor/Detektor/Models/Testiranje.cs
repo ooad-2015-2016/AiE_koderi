@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Detektor.Models
 {
     class Testiranje
-   
-        public string pitanje { get; set}
-        public string odgovor { get;  set}
-}
+    { 
+        public string pitanje { get; set; }
+        public string odgovor { get; set; }
+    }
 }

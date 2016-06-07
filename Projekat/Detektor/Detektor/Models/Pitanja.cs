@@ -8,7 +8,7 @@ namespace Detektor.Models
 {
     class Pitanja
     {
-        public string pitanje { get; set }
-        public Boolean odgovor { get;  set}
+        public string pitanje { get; set; }
+        public Boolean odgovor { get; set; }
     }
 }
