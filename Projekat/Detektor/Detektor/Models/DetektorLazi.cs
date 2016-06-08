@@ -9,11 +9,10 @@ namespace Detektor.Models
 {
     class DetektorLazi
     {
+        public int id { get; set; }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public List<Ispitivac> BazaIspitivaca;
         public List<Korisnik> BazaKorisnika;
         public List<Pitanja> pitanja;
-
-        public object Slika { get; internal set; }
     }
 }

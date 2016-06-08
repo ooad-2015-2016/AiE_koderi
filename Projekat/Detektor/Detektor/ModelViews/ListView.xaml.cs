@@ -1,5 +1,4 @@
-﻿using Detektor.ModelViews;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,28 +15,16 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Amna.ModelViews
+namespace Detektor.ModelViews
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class UnesiOdgovor : Page
+    public sealed partial class ListView : Page
     {
-        public UnesiOdgovor()
+        public ListView()
         {
             this.InitializeComponent();
-        }
-
-     
-        
-        private void NovoPitanje_Click(System.Object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(DodajPitanje));
-        }
-
-        private void Vratise_Click(System.Object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Ispitivanje));
         }
     }
 }

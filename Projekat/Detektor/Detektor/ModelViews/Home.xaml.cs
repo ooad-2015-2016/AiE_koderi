@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Detektor.ModelViews.ModelViews.ModelViews;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,21 @@ namespace Detektor.ModelViews
         public Home()
         {
             this.InitializeComponent();
+        }
+
+        private void UnesiKlijenta_Click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Odaberi_Click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Vrati_Click(System.Object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Menu));
         }
     }
 }

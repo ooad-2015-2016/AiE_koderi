@@ -1,6 +1,5 @@
 ﻿using Microsoft.Data.Entity;
 using Microsoft.Data.Sqlite;
-
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,7 +12,8 @@ namespace Detektor.Models
 {
     class DetektorLaziDbContext : DbContext
     {
-        public DbSet<DetektorLazi> tabela { get; set; }
+       
+        public DbSet<Ispitivac> tabela { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string databaseFilePath = "baza.db";
@@ -27,7 +27,7 @@ namespace Detektor.Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<DetektorLazi>().Property(p => p.Slika).HasColumnType("image");
+           
         }
     }
 }

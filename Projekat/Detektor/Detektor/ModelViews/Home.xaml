@@ -7,7 +7,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource SystemControlDisabledAccentBrush}">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="33" Margin="44,90,0,0" TextWrapping="Wrap" Text="Ime&#xD;&#xA;" VerticalAlignment="Top" Width="289"  BorderBrush="Black"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="31" Margin="43,156,0,0" TextWrapping="Wrap" Text="Prezime" VerticalAlignment="Top" Width="291" BorderBrush="Black"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="26" Margin="50,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" >
+        	<Run Text="Unesi novog k"/>
+        	<Run Text="lijenta"/>
+        	<Run Text=":"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="25" Margin="51,211,0,0" TextWrapping="Wrap" Text="Spol:" VerticalAlignment="Top" Width="157" />
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="30" Margin="48,248,0,0" VerticalAlignment="Top" Width="285" BorderBrush="Black"/>
+        <DatePicker HorizontalAlignment="Left" Height="42" Margin="46,335,0,0" VerticalAlignment="Top" Width="209" />
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="22" Margin="48,298,0,0" TextWrapping="Wrap" Text="Datum rođenja:" VerticalAlignment="Top" Width="112"/>
+        <Button x:Name="UnesiKlijenta" Content="Unesi klijenta" HorizontalAlignment="Left" Height="41" Margin="183,403,0,0" VerticalAlignment="Top" Width="156" BorderBrush="Black" Background="AntiqueWhite" Click="UnesiKlijenta_Click"  />
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Height="49" Margin="41,508,0,0" VerticalAlignment="Top" Width="299"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Height="23" Margin="48,476,0,0" TextWrapping="Wrap" Text="Odaberi postojećeg klijenta" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="Odaberi" Content="Odaberi" HorizontalAlignment="Left" Height="36" Margin="196,575,0,0" VerticalAlignment="Top" Width="144" BorderBrush="Black" Background="AntiqueWhite" Click="Odaberi_Click"/>
+        <Button x:Name="Vrati" Content="Vrati se" HorizontalAlignment="Left" Height="37" Margin="39,572,0,0" VerticalAlignment="Top" Width="140" BorderBrush="Black" Background="AntiqueWhite" Click="Vrati_Click"/>
+
 
     </Grid>
 </Page>

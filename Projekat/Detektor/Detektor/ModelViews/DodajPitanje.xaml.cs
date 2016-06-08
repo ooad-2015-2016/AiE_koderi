@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Detektor.ModelViews.ModelViews.ModelViews;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,27 @@ namespace Amna.ModelViews
         public DodajPitanje()
         {
             this.InitializeComponent();
+        }
+
+        private void Nastavi_Click(System.Object sender, RoutedEventArgs e)
+        {
+
+            this.Frame.Navigate(typeof(Ispitivanje));
+        }
+
+        private void Vrati_Click(System.Object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Menu));
+        }
+
+        private void Obrisi_Click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SacuvajPitanje_Click(System.Object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

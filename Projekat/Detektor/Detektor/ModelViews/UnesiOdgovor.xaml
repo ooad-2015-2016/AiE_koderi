@@ -18,8 +18,8 @@
 
             <Button x:Name="button1" Content="&#xA;LAŽ&#xA;" HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="270" FontWeight="Bold" FontSize="24"  Foreground="Bisque" BorderBrush="Bisque"/>
         </Grid>
-        <Button x:Name="button3" Content="Vrati se" HorizontalAlignment="Left" Height="42" Margin="33,560,0,0" VerticalAlignment="Top" Width="139" BorderBrush="Black" Background="AntiqueWhite"/>
-        <Button x:Name="button2" Content="Novo Pitanje" HorizontalAlignment="Left" Height="42" Margin="195,561,0,0" VerticalAlignment="Top" Width="146" BorderBrush="Black" Background="AntiqueWhite"/>
+        <Button x:Name="Vratise" Content="Vrati se" HorizontalAlignment="Left" Height="42" Margin="33,560,0,0" VerticalAlignment="Top" Width="139" BorderBrush="Black" Background="AntiqueWhite" Click="Vratise_Click" />
+        <Button x:Name="NovoPitanje" Content="Novo Pitanje" HorizontalAlignment="Left" Height="42" Margin="195,561,0,0" VerticalAlignment="Top" Width="146" BorderBrush="Black" Background="AntiqueWhite" Click="NovoPitanje_Click"/>
 
     </Grid>
 </Page>

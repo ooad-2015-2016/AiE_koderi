@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Detektor.ModelViews;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -27,8 +28,21 @@ namespace Amna.ModelViews
             this.InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+       
+
+        private void Vrati1_Click(System.Object sender, RoutedEventArgs e)
         {
+            this.Frame.Navigate(typeof(Home));
+        }
+
+        private void Modifikuj_Click(System.Object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodajPitanje));
+        }
+
+        private void Nastavi1_Click(System.Object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnesiOdgovor));
 
         }
     }

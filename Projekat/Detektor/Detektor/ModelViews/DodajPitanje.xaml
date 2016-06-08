@@ -18,16 +18,16 @@
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="31" Margin="42,92,0,0" VerticalAlignment="Top" Width="277" BorderBrush="Black"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="20" Margin="47,160,0,0" TextWrapping="Wrap" Text="Unesi novo pitanje:" VerticalAlignment="Top" Width="169"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="126" Margin="48,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" BorderBrush="Black" Background="White" />
-        <Button x:Name="button" Content="Sačuvaj pitanje" HorizontalAlignment="Left" Height="43" Margin="145,353,0,0" VerticalAlignment="Top" Width="172" Background="AntiqueWhite" BorderBrush="Black"/>
+        <Button x:Name="SacuvajPitanje" Content="Sačuvaj pitanje" HorizontalAlignment="Left" Height="43" Margin="145,353,0,0" VerticalAlignment="Top" Width="172" Background="AntiqueWhite" BorderBrush="Black" Click="SacuvajPitanje_Click"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="24" Margin="46,425,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TextLineBounds="Full">
         	<Run Text="O"/>
         	<Run Text="briši"/>
         	<Run Text=" postojeće pitanje:"/>
         </TextBlock>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Height="30" Margin="43,461,0,0" VerticalAlignment="Top" Width="265"  BorderBrush="Black"/>
-        <Button x:Name="button1" Content="Obriši" HorizontalAlignment="Left" Height="40" Margin="197,499,0,0" VerticalAlignment="Top" Width="134" Background="AntiqueWhite" BorderBrush="Black"/>
-        <Button x:Name="button2" Content="Nastavi" HorizontalAlignment="Left" Height="37" Margin="199,563,0,0" VerticalAlignment="Top" Width="132" Background="AntiqueWhite" BorderBrush="Black"/>
-        <Button x:Name="button3" Content="Vrati se" HorizontalAlignment="Left" Height="38" Margin="38,562,0,0" VerticalAlignment="Top" Width="140" Background="AntiqueWhite" BorderBrush="Black"/>
+        <Button x:Name="Obrisi" Content="Obriši" HorizontalAlignment="Left" Height="40" Margin="197,499,0,0" VerticalAlignment="Top" Width="134" Background="AntiqueWhite" BorderBrush="Black" Click="Obrisi_Click"/>
+        <Button x:Name="Nastavi" Content="Nastavi" HorizontalAlignment="Left" Height="37" Margin="199,563,0,0" VerticalAlignment="Top" Width="132" Background="AntiqueWhite" BorderBrush="Black" Click="Nastavi_Click"/>
+        <Button x:Name="Vrati" Content="Vrati se" HorizontalAlignment="Left" Height="38" Margin="38,562,0,0" VerticalAlignment="Top" Width="140" Background="AntiqueWhite" BorderBrush="Black" Click="Vrati_Click"/>
 
     </Grid>
 </Page>

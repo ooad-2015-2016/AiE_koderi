@@ -10,9 +10,9 @@
     <Grid Background="{ThemeResource SystemControlDisabledAccentBrush}">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="34" Margin="50,80,0,0" TextWrapping="Wrap" Text="Odaberi Pitanje" VerticalAlignment="Top" Width="176"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="30" Margin="48,141,0,0" VerticalAlignment="Top" Width="274" BorderBrush="Black"/>
-        <Button x:Name="button" Content="Nastavi sa ispitivanjem" HorizontalAlignment="Left" Height="76" Margin="53,221,0,0" VerticalAlignment="Top" Width="267" FontWeight="Bold" BorderBrush="Black" Click="button_Click"/>
-        <Button x:Name="button1" Content="Modifikuj pitanje" HorizontalAlignment="Left" Height="80" Margin="56,397,0,0" VerticalAlignment="Top" Width="266" FontWeight="Bold" BorderBrush="Black"/>
-        <Button x:Name="button2" Content="&#xD;&#xA;Vrati se nazad&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="79" Margin="56,510,0,0" VerticalAlignment="Top" Width="264" FontWeight="Bold" BorderBrush="Black"/>
+        <Button x:Name="Nastavi1" Content="Nastavi sa ispitivanjem" HorizontalAlignment="Left" Height="76" Margin="53,221,0,0" VerticalAlignment="Top" Width="267" FontWeight="Bold" BorderBrush="Black" Click="Nastavi1_Click"/>
+        <Button x:Name="Modifikuj" Content="Modifikuj pitanje" HorizontalAlignment="Left" Height="80" Margin="56,397,0,0" VerticalAlignment="Top" Width="266" FontWeight="Bold" BorderBrush="Black" Click="Modifikuj_Click"/>
+        <Button x:Name="Vrati1" Content="&#xD;&#xA;Vrati se nazad&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="79" Margin="56,510,0,0" VerticalAlignment="Top" Width="264" FontWeight="Bold" BorderBrush="Black" Click="Vrati1_Click"/>
 
     </Grid>
 </Page>

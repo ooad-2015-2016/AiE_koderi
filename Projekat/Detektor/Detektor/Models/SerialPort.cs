@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Detektor.Models
 {
-    class Ispitivac
+    class SerialPort
     {
-
-        public int IspitivacId { get; set; }
-        public string ImePrezime { get; set; }
-        public string Password { get; set; }
+        //BaudRate
     }
 }

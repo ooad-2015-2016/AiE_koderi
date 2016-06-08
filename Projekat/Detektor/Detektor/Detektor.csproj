@@ -92,6 +92,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Detektor.nuget.targets" />
+    <None Include="Detektor_TemporaryKey.pfx" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -99,12 +101,19 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataSource\DataSourceMenuMD.cs" />
+    <Compile Include="Migrations\20160607133429_InitialMigration.cs" />
+    <Compile Include="Migrations\20160607133429_InitialMigration.designer.cs">
+      <DependentUpon>20160607133429_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\DetektorLaziDbContextModelSnapshot.cs" />
+    <Compile Include="Models\DefaultPodaci.cs" />
     <Compile Include="Models\DetektorLazi.cs" />
     <Compile Include="Models\DetektorLaziDbContext.cs" />
     <Compile Include="Models\Ispitivac.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\Pitanja.cs" />
     <Compile Include="Models\Referenciranje.cs" />
+    <Compile Include="Models\SerialPort.cs" />
     <Compile Include="Models\Testiranje.cs" />
     <Compile Include="ModelViews\DodajPitanje.xaml.cs">
       <DependentUpon>DodajPitanje.xaml</DependentUpon>
@@ -115,17 +124,11 @@
     <Compile Include="ModelViews\Ispitivanje.xaml.cs">
       <DependentUpon>Ispitivanje.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ModelViews\ListView.xaml.cs">
+      <DependentUpon>ListView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModelViews\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ModelViews\ModelViews\Home.xaml.cs">
-      <DependentUpon>Home.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ModelViews\ModelViews\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ModelViews\ModelViews\Registracija.xaml.cs">
-      <DependentUpon>Registracija.xaml</DependentUpon>
     </Compile>
     <Compile Include="ModelViews\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>
@@ -139,7 +142,6 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="Detektor_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ModelViews\Images\add-a-button-icon-56789.png" />
@@ -177,19 +179,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ModelViews\ListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ModelViews\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ModelViews\ModelViews\Home.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ModelViews\ModelViews\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ModelViews\ModelViews\Registracija.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
